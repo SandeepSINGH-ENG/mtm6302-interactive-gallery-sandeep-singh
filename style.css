@@ -1,0 +1,115 @@
+
+*{
+    font-family: "Sarabun", sans-serif;
+}
+h3 {
+    margin: 0px;
+}
+div#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+    gap: 2%;
+}
+.col-3 {
+    width: 32%;
+}
+img{
+    width:100%;
+}
+.gallery-slide {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+}
+div#pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000db;
+    height: 100vh;
+    z-index: 99999;
+    text-align: center;
+}
+img#active-gal {
+    width: 80%;
+    margin: auto;
+}
+img#active-gal {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn {
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+div#next {
+    right: 10px;
+}
+div#pre {
+    left: 10px;
+    
+}
+.col {
+    margin-bottom: 20px;
+}
+#pop-up{
+    display: none;
+}
+div#close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+.col-2 {
+    width: 49%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 50px auto;
+    font-size: 24px;
+}
+.col img:hover{
+        scale: 1.2;
+        transform-origin: center;
+        transition-duration: 2s;
+}
+footer{
+    text-align: center;
+}
+div#caption-data {
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 570px) {
+    .gallery-slide img {
+        height: 100px;
+        object-fit: cover;
+    }
+    .col-3 {
+        width: 49%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+  }
